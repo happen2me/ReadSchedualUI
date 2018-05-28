@@ -42,13 +42,13 @@
         "selectedIconPath": "res/icons/explore-selected.png"
       },
       {
-        "pagePath": "pages/plans/plans",
+        "pagePath": "pages/account/account",
         "text": "我的",
         "iconPath": "res/icons/user.png",
         "selectedIconPath": "res/icons/user-selected.png"
       }
     ],
-    "selectedColor": "blue",
+    "selectedColor": "#006DF0",
     "position": "bottom"
   }
 }
