@@ -1,11 +1,11 @@
 <template name="book-cover">
-    <block wx:for="{{bookList}}" wx:key="{{bookList}}">
-      <view class='flex'>
-        <navigator  url="../book-detail/book-detail?id={{item.id}}">
+    <view class='book-cover-list'>
+      <view wx:for="{{bookList}}" wx:key="{{bookList}}">
+         <navigator  url="../book-detail/book-detail?id={{item.id}}"> 
             <view class="book-cover">
                 <image class="book-cover-img" src="{{item.image}}"></image>
             </view>
-        </navigator>
+         </navigator> 
       </view>
-    </block>
+    </view>
 </template>

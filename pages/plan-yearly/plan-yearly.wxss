@@ -1,1 +1,13 @@
 /* pages/plan-yearly/plan-yearly.wxss */
+.head-banner{
+  height: 300rpx;
+  background-color: #006DF0;
+}
+
+.head-title{
+  padding: 40rpx;
+  font-size: 2em;
+  color: white;
+  position: relative;
+  top: 150rpx;
+}

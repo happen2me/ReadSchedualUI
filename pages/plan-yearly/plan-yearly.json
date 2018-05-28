@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "年度计划",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#006DF0"
+}
