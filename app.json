@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/books/books",
+    "pages/logs/logs",
+    "pages/account/account",
+    "pages/book-detail/book-detail",
+    "pages/new-plan/new-plan",
+    "pages/search/search",
+    "pages/plans/plans"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "计划",
+        "iconPath": "res/icons/event.png",
+        "selectedIconPath": "res/icons/event-selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查找",
+        "iconPath": "res/icons/search.png",
+        "selectedIconPath": "res/icons/search-selected.png"
+      },
+      {
+        "pagePath": "pages/new-plan/new-plan",
+        "text": "添加",
+        "iconPath": "res/icons/add.png",
+        "selectedIconPath": "res/icons/add-selected.png"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "text": "发现",
+        "iconPath": "res/icons/explore.png",
+        "selectedIconPath": "res/icons/explore-selected.png"
+      },
+      {
+        "pagePath": "pages/plans/plans",
+        "text": "我的",
+        "iconPath": "res/icons/user.png",
+        "selectedIconPath": "res/icons/user-selected.png"
+      }
+    ],
+    "selectedColor": "blue",
+    "position": "bottom"
+  }
+}

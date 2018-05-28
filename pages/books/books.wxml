@@ -1,0 +1,6 @@
+<!--pages/books/books.wxml-->
+<view>
+  <import src="../component/item.wxml"/>
+  <template is="item" data="{{bookList: books}}"/>
+  
+</view>

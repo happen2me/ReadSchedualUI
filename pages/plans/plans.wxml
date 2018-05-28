@@ -1,0 +1,34 @@
+<!--pages/plans/plans.wxml-->
+<text>pages/plans/plans.wxml</text>
+
+<!-- <import src="/towxml/entry.wxml"/>
+<template is="entry" data="{{...article}}"/> -->
+
+<view class='card'>
+  <view class='card_left'>
+    <image class='book_cover' src='kill.png'></image>
+  </view>
+  <view class='card_right'>
+    <text class='h1'>KILL BILL</text>
+    <view class='card_right__details'>
+      <view class='ul'>
+        <text class='li'>2003</text>
+        <text class='li'>111 min</text>
+        <text class='li'>Action</text>
+      </view>
+
+      <view class='card_right__review'>
+        <text class='p'>faudkhfoigsdfuyshd<br/>faisudfsdgyfuafsd<br/>fasdfad</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='card'>
+  <view class='card_left'>
+    <image src='kill.png'></image>
+  </view>
+  <view class='card_right'>
+    <label>KILLBILL</label>
+  </view>
+</view>
