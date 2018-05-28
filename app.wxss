@@ -460,3 +460,12 @@ page{
 
 }
 
+/*book cover*/
+.book-cover{
+  padding: 10rpx;
+}
+
+.book-cover-img{
+  width: 210rpx;
+  height: 280rpx;
+}

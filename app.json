@@ -7,7 +7,8 @@
     "pages/book-detail/book-detail",
     "pages/new-plan/new-plan",
     "pages/search/search",
-    "pages/plans/plans"
+    "pages/plans/plans",
+    "pages/plan-yearly/plan-yearly"
   ],
   "window": {
     "backgroundTextStyle": "light",

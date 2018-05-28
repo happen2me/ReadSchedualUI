@@ -1,0 +1,11 @@
+<!--pages/plan-yearly/plan-yearly.wxml-->
+<text>pages/plan-yearly/plan-yearly.wxml</text>
+<view>
+  <import src="../component/book-cover.wxml"/>
+  <text>正在阅读：</text>
+  <template is="book-cover" data="{{bookList: booksInProgress}}"/>
+  <text>将要阅读：</text>
+  <template is="book-cover" data="{{bookList: booksToRead}}"/>
+  <text>已完成：</text>
+  <template is="book-cover" data="{{bookList: booksFinished}}"/>
+</view>

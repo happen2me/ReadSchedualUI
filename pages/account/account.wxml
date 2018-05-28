@@ -33,4 +33,10 @@
             <text>显示plans页面</text>
         </navigator>
     </view>
+
+    <view class="uploader">
+        <navigator url="../plan-yearly/plan-yearly" open-type="navigate" class="uploader-text">
+            <text>显示plan-yaerly页面</text>
+        </navigator>
+    </view>
 </view>
