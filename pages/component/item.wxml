@@ -1,5 +1,5 @@
 <template name="item">
-    <block wx:for="{{bookList}}">
+    <block wx:for="{{bookList}}" wx:key="{{item.BookName}}">
         <navigator class="ibox-list-nav"  url="../book-detail/book-detail?id={{item.id}}">
             <view class="ibox-list">
                 <image class="ibox-list-img" src="{{item.image}}"></image>

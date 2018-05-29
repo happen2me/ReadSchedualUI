@@ -3,6 +3,7 @@ var api = require('./config.js');
 function request(url, data, successCb, errorCb, completeCb) {
     wx.request({
         url: url,
+        header: { "Content-Type": "json"},
         method: 'GET',
         data: data,
         success: successCb,

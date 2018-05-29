@@ -3,30 +3,30 @@ const app = getApp()
 var toshow = "";
 var plan1 = {
   planID: 0,
-  startDate: "2018-1-24",
-  endDate: "2018-11-24",
-  bookTitle: "The Man Who Changed China",
-  progress: 100,
+  DateStart: "2018-1-24",
+  DateEnd: "2018-11-24",
+  BookName: "The Man Who Changed China",
+  Process: 100,
   total: 500,
   backgroundColor: randDarkColor(),
   coverUrl: ""
 };
 var plan2 = {
   planID: 1,
-  startDate: new Date('2018-04-17T03:24:00'),
-  endDate: new Date('2018-7-17T03:24:00'),
-  bookTitle: "1984",
-  progress: 400,
+  DateStart: '2018-04-17',
+  DateEnd: '2018-7-17',
+  BookName: "1984",
+  Process: 400,
   total: 450,
   backgroundColor: randDarkColor(),
   coverUrl: ""
 };
 var plan3 = {
   planID: 2,
-  startDate: new Date('2018-02-17T03:24:00'),
-  endDate: new Date('2018-5-17T03:24:00'),
-  bookTitle: "Animal Farm",
-  progress: 0,
+  DateStart: '2018-02-17',
+  DateEnd: '2018-5-17',
+  BookName: "Animal Farm",
+  Process: 0,
   total: 450,
   backgroundColor: randDarkColor(),
   coverUrl: ""
@@ -40,7 +40,8 @@ Page({
   data: {
     //article将用来存储towxml数据
     article: {},
-    planList:[
+    planList:
+    [
       plan1,
       plan2,
       plan3
@@ -53,22 +54,14 @@ Page({
   onLoad: function (options) {
     const _ts = this;
 
-    /*
-    //将markdown内容转换为towxml数据，交将当前页面对象传入以创建默认事件对象
-    let articleData = app.towxml.toJson(toshow, 'html', _ts);
-    //let articleData = app.towxml.html2wxml('<h1>test</h1>');
-    //自定义事件，格式为`event_`+`绑定类型`+`_`+`事件类型`
-    //例如`bind:touchstart`则为：
-    this['event_bind_touchstart'] = (event) => {
-      console.log(event.target.dataset.name);     // 打印出"button"
-    };
-
-    //设置文章数据，并清除页面loading
-    _ts.setData({
-      article: articleData,
-      isloading: false
-    });
-    */
+    var that = this;
+    wx.request({
+      url: 'https://492580066.fkten.xyz/weapp/Plan/getPlanList/oieeV5P3MUvnf3k1lUw5C2NQ1yHw',
+      success(result){
+        that.setData({planList: that.data.planList.concat(result.data)});
+        console.log(result.data);
+      }
+    })
   },
 
   /**
