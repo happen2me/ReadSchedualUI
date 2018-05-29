@@ -1,10 +1,9 @@
 <!--pages/plans/plans.wxml-->
-<text>pages/plans/plans.wxml</text>
 
 <!-- <import src="/towxml/entry.wxml"/>
 <template is="entry" data="{{...article}}"/> -->
 
-<view class='card'>
+<!-- <view class='card'>
   <view class='card_left'>
     <image class='book_cover' src='kill.png'></image>
   </view>
@@ -22,24 +21,15 @@
       </view>
     </view>
   </view>
-</view>
-
-<view class='card'>
-  <view class='card_left'>
-    <image class='book_cover' src='kill.png'></image>
-  </view>
-  <view class='card_right'>
-    <text class='h1'>KILL BILL</text>
-    <view class='card_right__details'>
-      <view class='ul'>
-        <text class='li'>2003</text>
-        <text class='li'>111 min</text>
-        <text class='li'>Action</text>
-      </view>
-
-      <view class='card_right__review'>
-        <text class='p'>faudkhfoigsdfuyshd<br/>faisudfsdgyfuafsd<br/>fasdfad</text>
+</view> -->
+<view wx:for="{{planList}}" wx:key="{{planList}}">
+  <navigator  url="../plan-detail/plan-detail?id={{item.planID}}"> 
+    <view class='card' style='background-color:{{item.backgroundColor}}'>
+      <view class='card_left'>
+        <text class='h1'>{{item.bookTitle}}</text>
+        <text class='h3'>{{item.startDate}} ~ {{item.endDate}}</text>
+        <text class='h2'>{{item.progress}} / {{item.total}}</text>
       </view>
     </view>
-  </view>
+  </navigator> 
 </view>
