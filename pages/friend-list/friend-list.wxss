@@ -1,1 +1,30 @@
-/* pages/friend-list/friend-list.wxss */
+.userinfo-item {
+  display: flex;
+  width: 640rpx;
+  height: 150rpx;
+  background: transparent;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  top: 0;
+  bottom: 0;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  float: left;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: black;
+  position: relative;
+  height: 128rpx;
+  /* float: right; */
+  line-height: 150rpx;
+  margin-left: 50rpx;
+}

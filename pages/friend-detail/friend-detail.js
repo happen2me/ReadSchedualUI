@@ -1,23 +1,11 @@
-// pages/friend-list/friend-list.js
-var user1 = {
-avatarUrl:"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ87eohNysB3Nje95tcAfZGRtBlYwlR6sHEZcxBwmAeOj6ZhasMHHmSK2ibicEKlxOUtgV4Y0rrz04Q/132",
-nickname: "sakamoto",
-userID: "KJKJH67GYGYU8BIU"
-}
+// pages/friend-detail/friend-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    friendList:
-    [
-      user1,
-      user1,
-      user1,
-      user1,
-      user1
-    ]
+  
   },
 
   /**

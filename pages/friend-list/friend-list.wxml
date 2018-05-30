@@ -1,2 +1,9 @@
 <!--pages/friend-list/friend-list.wxml-->
-<text>pages/friend-list/friend-list.wxml</text>
+<view wx:for="{{friendList}}" wx:key="{{item.nickname}}">
+  <navigator  url="../friend-detail/friend-detail?id={{item.userID}}"> 
+    <view class='userinfo-item'>
+      <image class='userinfo-avatar' src='{{item.avatarUrl}}'></image>
+      <text class='userinfo-nickname'>{{item.nickname}}</text>
+    </view> 
+  </navigator> 
+</view>

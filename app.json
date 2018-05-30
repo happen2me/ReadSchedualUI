@@ -9,7 +9,8 @@
     "pages/search/search",
     "pages/plans/plans",
     "pages/plan-yearly/plan-yearly",
-    "pages/friend-list/friend-list"
+    "pages/friend-list/friend-list",
+    "pages/friend-detail/friend-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
