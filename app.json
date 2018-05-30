@@ -8,12 +8,13 @@
     "pages/new-plan/new-plan",
     "pages/search/search",
     "pages/plans/plans",
-    "pages/plan-yearly/plan-yearly"
+    "pages/plan-yearly/plan-yearly",
+    "pages/friend-list/friend-list"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "读书计划",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

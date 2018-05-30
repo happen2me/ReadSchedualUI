@@ -39,4 +39,10 @@
             <text>显示plan-yearly页面</text>
         </navigator>
     </view>
+
+    <view class="uploader">
+        <navigator url="../friend-list/friend-list" open-type="navigate" class="uploader-text">
+            <text>显示friend-list页面</text>
+        </navigator>
+    </view>
 </view>
