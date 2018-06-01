@@ -10,7 +10,8 @@
     "pages/plans/plans",
     "pages/plan-yearly/plan-yearly",
     "pages/friend-list/friend-list",
-    "pages/friend-detail/friend-detail"
+    "pages/friend-detail/friend-detail",
+    "pages/expense/expense"
   ],
   "window": {
     "backgroundTextStyle": "light",
