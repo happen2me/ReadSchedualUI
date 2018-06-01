@@ -45,4 +45,10 @@
             <text>显示friend-list页面</text>
         </navigator>
     </view>
+
+    <view class="uploader">
+        <navigator url="../expense/expense" open-type="navigate" class="uploader-text">
+            <text>显示expense页面</text>
+        </navigator>
+    </view>
 </view>
