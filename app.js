@@ -3,6 +3,9 @@ var qcloud = require('./vendor/wafer2-client-sdk/index')
 var config = require('./config')
 
 App({
+  globalData: {
+    userInfo: null
+  },
   onLaunch: function () {
     qcloud.setLoginUrl(config.service.loginUrl)
     // 展示本地存储能力
