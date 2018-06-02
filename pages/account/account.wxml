@@ -33,6 +33,12 @@
     </view>
 
     <view class="uploader">
+        <navigator url="../book/books/books" open-type="navigate" class="uploader-text">
+            <text>显示books页面</text>
+        </navigator>
+    </view>
+
+    <view class="uploader">
         <navigator url="../friend/friend-list/friend-list" open-type="navigate" class="uploader-text">
             <text>显示friend-list页面</text>
         </navigator>

@@ -14,7 +14,8 @@
     "pages/expense/expense",
     "pages/note/note",
     "pages/note/note-add/note-add",
-    "pages/bin/plans/plans"
+    "pages/bin/plans/plans",
+    "pages/explore/explore"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -43,7 +44,7 @@
         "selectedIconPath": "res/icons/add-selected.png"
       },
       {
-        "pagePath": "pages/book/books/books",
+        "pagePath": "pages/explore/explore",
         "text": "发现",
         "iconPath": "res/icons/explore.png",
         "selectedIconPath": "res/icons/explore-selected.png"
