@@ -2,47 +2,47 @@
 const starDate =  {
     star : [
         {
-            src: "../../res/star/icon_star_0.png",
+            src: "../../../res/star/icon_star_0.png",
             name : '零星'
         },
         {
-            src : "../../res/star/icon_star_0_5.png",
+            src : "../../../res/star/icon_star_0_5.png",
             name : '半星'
         },
         {
-            src : "../../res/star/icon_star_1.png",
+            src : "../../../res/star/icon_star_1.png",
             name : '一星'
         },
         {
-            src : "../../res/star/icon_star_1_5.png",
+            src : "../../../res/star/icon_star_1_5.png",
             name : '一星半'
         },
         {
-            src : "../../res/star/icon_star_2.png",
+            src : "../../../res/star/icon_star_2.png",
             name : '二星'
         },
         {
-            src : "../../res/star/icon_star_2_5.png",
+            src : "../../../res/star/icon_star_2_5.png",
             name : '二星半'
         },
         {
-            src : "../../res/star/icon_star_3.png",
+            src : "../../../res/star/icon_star_3.png",
             name : '三星'
         },
         {
-            src : "../../res/star/icon_star_3_5.png",
+            src : "../../../res/star/icon_star_3_5.png",
             name : '三星半'
         },
         {
-            src : "../../res/star/icon_star_4.png",
+            src : "../../../res/star/icon_star_4.png",
             name : '四星'
         },
         {
-            src : "../../res/star/icon_star_4_5.png",
+            src : "../../../res/star/icon_star_4_5.png",
             name : '四星半'
         },
         {
-            src : "../../res/star/icon_star_5.png",
+            src : "../../../res/star/icon_star_5.png",
             name : '五'
         }
     ]

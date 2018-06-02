@@ -1,0 +1,82 @@
+<!--pages/new-plan/new-plan.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+
+
+    <view class="weui-cells__title">书籍信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">书名</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="点击以选择" />
+        </view>
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" bindtap="scanBarcode" style="color:#006DF0">扫描条形码</view>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">价格</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="默认为0" />
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-cells__title">时间计划</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">开始日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">结束日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2019-09-01" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">隐私</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">公开信息给非好友</view>
+      <view class="weui-cell__ft">
+        <switch checked color='#006DF0'/>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="weui-cells__title">备注</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="备注信息（可选）" style="height: 2.3em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-btn-area" >
+    <button class="weui-btn" type="primary" bindtap="showTopTips" style='background-color:#006DF0'>确定</button>
+  </view>
+</view>

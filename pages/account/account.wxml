@@ -15,33 +15,25 @@
 
     <!-- 上传图片测试 -->
     <view class="uploader">
-        <view class="uploader-text">
-            <text>假的上传图片</text>
-        </view>
-        <view class="uploader-container" wx:if="{{imgUrl}}">
-            <image
-                class="uploader-image"
-                src="{{imgUrl}}"
-                mode="aspectFit"
-                bindtap="previewImg"
-            ></image>
-        </view>
-    </view>
-
-    <view class="uploader">
-        <navigator url="../plans/plans" open-type="navigate" class="uploader-text">
-            <text>显示plans页面</text>
+        <navigator url="../index/index" open-type="navigate" class="uploader-text">
+            <text>显示授权页</text>
         </navigator>
     </view>
 
     <view class="uploader">
-        <navigator url="../plan-yearly/plan-yearly" open-type="navigate" class="uploader-text">
+        <navigator url="../bin/plans/plans" open-type="navigate" class="uploader-text">
+            <text>显示plans页面(废弃)</text>
+        </navigator>
+    </view>
+
+    <view class="uploader">
+        <navigator url="../plan/plan-yearly/plan-yearly" open-type="navigate" class="uploader-text">
             <text>显示plan-yearly页面</text>
         </navigator>
     </view>
 
     <view class="uploader">
-        <navigator url="../friend-list/friend-list" open-type="navigate" class="uploader-text">
+        <navigator url="../friend/friend-list/friend-list" open-type="navigate" class="uploader-text">
             <text>显示friend-list页面</text>
         </navigator>
     </view>

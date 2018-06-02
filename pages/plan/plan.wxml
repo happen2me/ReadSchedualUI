@@ -1,0 +1,17 @@
+<!--pages/plan/plan.wxml-->
+<import src="plan-item/plan-item-tpl.wxml" />
+
+<view>
+  <block wx:for="{{planList}}" wx:for-item="item" wx:for-index="idx">
+    <view >
+      <template is="planItemTpl" data="{{...item}}" />
+    </view>
+  </block>
+
+  <view wx:if="{{planList.length!=0}}" class="plan-add">
+    <button class="weui-btn" type="primary" catchtap="onTapToCreate" style="background-color:#006DF0">添加新计划</button>
+  </view>
+  <view wx:else class="plan-add" style="margin-top:300rpx">
+    <button class="weui-btn" type="primary" catchtap="onTapToCreate" style="background-color:#006DF0">添加新计划</button>
+  </view>  
+</view>

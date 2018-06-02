@@ -1,6 +1,4 @@
 //app.js
-
-const Towxml = require('towxml/main')     //引入towxml库
 var qcloud = require('./vendor/wafer2-client-sdk/index')
 var config = require('./config')
 
@@ -39,9 +37,4 @@ App({
       }
     })
   },
-
-  towxml: new Towxml(),  //创建towxml对象，供小程序页面使用
-  globalData: {
-    userInfo: null
-  }
 })

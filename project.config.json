@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wxf21ba90d051c4161",
-	"projectname": "TestProject",
+	"projectname": "ReadingPlan",
 	"condition": {
 		"search": {
 			"current": -1,
