@@ -1,7 +1,7 @@
 <template name="book-cover">
     <view class='book-cover-list'>
       <view wx:for="{{bookList}}" wx:key="{{bookList}}">
-         <navigator  url="../book-detail/book-detail?id={{item.id}}"> 
+         <navigator  url="../../book/book-detail/book-detail?id={{item.id}}"> 
             <view class="book-cover">
                 <image class="book-cover-img" src="{{item.image}}"></image>
             </view>
